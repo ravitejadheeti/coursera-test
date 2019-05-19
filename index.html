@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Look - Perfect Escape</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    <link rel="stylesheet" href="css/bootstrap.min.css" />-->
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <style>
+        body {
+            /*            background: url('ref/01_Cover.jpg') no-repeat center center fixed;*/
+            background: url('./images/CoverPage/Bg_image_old.jpg') no-repeat top center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            padding: 10px 56px;
+            
+        }
+
+       
+        .menu{
+            text-decoration-color: aliceblue;
+        }
+      
+
+        #look_title{
+            font-size: 100px;
+            color: yellow;
+            font-weight: 600;
+        }
+ #book_tile{
+            font-size: 100px;
+            color: palevioletred;
+            font-weight: 600;
+        }
+
+#title{
+            text-align: right;
+             font-weight: 200;
+                
+        }
+
+ #homepage_date{
+            color: pink;
+            font-size: 50px;
+            text-transform: uppercase;
+            position: absolute;
+            left: 70%;
+            top: 13%;
+            
+        }
+        
+#bottom { 
+                position:absolute;                  
+                bottom:0;                          
+                left:0;   
+               
+            } 
+        
+ #look_title_img{
+            width:80%;
+            height:13%;
+            position: absolute;
+            right:5%;
+        }
+        
+.menu__link{
+            font-size: 18px;
+            padding: 0px;
+        }
+ #orange_txt{
+            background-color: black;
+        }
+        
+ .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+    </style>
+</head>
+
+<body id="index_body">
+
+<div class="container"> 
+    
+    <div>
+        <div class="title" style="text-align : right">
+            <image src="./images/CoverPage/logo.png" id="look_title_img"></image> <br /><br/><br/>
+             <span id="logoMonth"><label id="homepage_date"></label></span>
+        </div>
+   
+    </div>
+    
+    
+<div>  
+<header class="header">
+  <div class="hamburger"> 
+      <table>
+          <tr>
+              <td>
+                     <image src="Icons/Spotlight%20logo.png" id="hamburger_spotlight_btn" class="hamburger_spotlight_btn" align="right"></image>  &nbsp;
+    
+              </td>
+          </tr>  
+          <tr>
+              <td>
+                  <p>&nbsp;&nbsp;&nbsp;</p>
+              </td>
+          </tr>
+          <tr>
+                <td>
+                    
+      <image src="Icons/hamburger.png" id="hamburger_menu_btn" class="js-menu__toggle"></image> 
+              </td>
+          </tr>
+    </table>
+
+   
+  </div>
+  
+  <div class="dialog">
+    
+    <nav class="menu">
+      <ul class="list menu__list">
+      <li class="menu__group">
+        <a href="#0" id="menu_orange"class="link menu__link">ORANGE IS THE NEW BLACK</a>
+      </li>
+      <li class="menu__group">
+        <a href="#0" class="link menu__link">PERFECT ESCAPE</a>
+      </li>
+      <li class="menu__group">
+        <a href="#0" class="link menu__link">CAMPAIGN</a>
+      </li>
+      <li class="menu__group">
+        <a href="#0" class="link menu__link">STYLE HACKS</a>
+      </li>
+      <li class="menu__group">
+        <a href="#0" class="link menu__link">BLOGS</a>
+      </li>
+      <li class="menu__group">
+        <a href="#0" class="link menu__link">NOW TRENDING</a>
+      </li>
+        <li class="menu__group">
+        <a href="#0" class="link menu__link">GET SOCIAL</a>
+      </li>
+          <li>
+           <a href="#0" class="link menu__home"><image src="Icons/Home.png" id="hamburger_home_btn" class="js-menu__toggle"></image> </a> 
+          </li> 
+          <li>
+           <a href="#0" class="link menu__close"><image src="Icons/Close.png" id="hamburger_close_btn" class="js-menu__toggle"></image> </a> 
+          </li>
+       
+    </ul>
+        
+  </nav>
+
+</div>
+  
+</header>
+    
+  </div>
+ 
+     <div class="demo-content" align="bottom" id="bottom">
+       <div id="image-golf">
+          <div id="vertical-orientation"><b id="orange_txt">ORANGE&nbsp;&nbsp;</b></div>
+        
+      </div>
+      <div id="image-golf2">
+        <div id="vertical-orientation2">&nbsp;&nbsp;&nbsp;&nbsp;IS THE NEW BLACK&nbsp;</div>
+      </div>
+    
+   </div>
+ 
+    
+
+  
+</div>
+   
+</body>
+<script src="./js/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script>
+          $(document).ready(function(){
+             $(".js-menu__toggle").on('click',function(){
+                  // code here
+       
+                jQuery('.container').css('Background',"transparent");
+                          jQuery('.container').css('opacity',0.9);
+              });
+          });
+     $(document).ready(function(){
+             $(".menu__close").on('click',function(){
+                  // code here
+                 window.location.href = "index.html";
+                 //$(".menu").close;
+
+              });
+          });
+     $(document).ready(function(){
+            $(".hamburger_spotlight_btn").click(function(){
+                  // code here
+                
+                window.location.href = "QRScanner.html";
+              
+              });
+          });
+    $(function() {
+            var monthNames = ["January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
+            ];
+            var d = new Date();
+            $("#homepage_date").text(monthNames[d.getMonth()] + " " + d.getFullYear());
+
+            $(".pEscape").on("click", function() {
+                window.location.href = "perfect.html";
+            });
+            $(".orange").on("click", function() {
+                window.location.href = "orange.html";
+            });
+            $(".sHacks").on("click", function() {
+                window.location.href = "styleHacks.html";
+            });
+            $(".campaign").on("click", function() {
+                window.location.href = "campaign.html";
+            });
+            $(".bHome").on("click", function() {
+                window.location.href = "/Look/celebrityStyle.html";
+            });
+            $(".blogs").on("click", function() {
+                window.location.href = "/look_book/blogs.html";
+            });
+            $(".now").on("click", function() {
+                window.location.href = "/look_book/dti.html";
+            });
+            // look_book/getSocial.html
+        });
+
+</script>
+  
+</html>
